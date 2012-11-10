@@ -1,0 +1,2 @@
+= setup new rails =
+    * rails new project_name
