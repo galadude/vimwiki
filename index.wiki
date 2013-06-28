@@ -10,4 +10,4 @@
     * [[Middleman_Console_Commands]]
 
 = Game JavaScript knowledge Base =
-    * [[JavaScript_Snippets]]
+    * [[Games/Game_JavaScript_Snippets]]
