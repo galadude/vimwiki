@@ -1,28 +1,28 @@
-```javascript
-// Example of simple cell-based animation
-var counter = 0;
-   var tileSheet = new Image();
-   tileSheet.addEventListener('load', eventShipLoaded , false);
-   tileSheet.src = "ships.png";
+```JavaScript
+    // Example of simple cell-based animation
+    var counter = 0;
+       var tileSheet = new Image();
+       tileSheet.addEventListener('load', eventShipLoaded , false);
+       tileSheet.src = "ships.png";
 
-   function eventShipLoaded() {
-      startUp();
-   }
+       function eventShipLoaded() {
+          startUp();
+       }
 
-   function drawScreen() {
+       function drawScreen() {
 
-       //draw a background so we can see the Canvas edges
-       context.fillStyle = "#aaaaaa";
-       context.fillRect(0,0,500,500);
-       context.drawImage(tileSheet, 32*counter, 0,32,32,50,50,64,64);
-         counter++;
-         if (counter >1) {
-            counter = 0;
-         }
-   }
+           //draw a background so we can see the Canvas edges
+           context.fillStyle = "#aaaaaa";
+           context.fillRect(0,0,500,500);
+           context.drawImage(tileSheet, 32*counter, 0,32,32,50,50,64,64);
+             counter++;
+             if (counter >1) {
+                counter = 0;
+             }
+       }
 
-    function startUp(){
+        function startUp(){
 
-        setInterval(drawScreen, 100 );
-    }
+            setInterval(drawScreen, 100 );
+        }
 ```
