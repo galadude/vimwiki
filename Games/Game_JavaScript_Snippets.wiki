@@ -1,4 +1,4 @@
-// Example of simple cell-based animation
+    // Example of simple cell-based animation
     var counter = 0;
        var tileSheet = new Image();
        tileSheet.addEventListener('load', eventShipLoaded , false);
